@@ -1,0 +1,157 @@
+#root {
+  --navbar-height: 4rem;
+  --login-form-color: rgb(214, 236, 243);
+  --meme-form-color: rgb(255, 219, 88);
+}
+
+/* navbar styles */
+.memes-navbar {
+  height: var(--navbar-height);
+}
+
+.memes-navbar .sign-in-button,
+.memes-navbar .logout-button {
+  width: 5.5rem;
+}
+
+.memes-navbar .user-info {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.15em;
+}
+
+.memes-navbar .user-score {
+  color: rgb(255, 226, 6);
+}
+
+/* login form styles */
+
+.login-form .card-body {
+  padding: 0;
+}
+
+.login-form {
+  border: 0.5px solid grey;
+  border-radius: 8px;
+  padding: 1.4em 2.2em;
+  background-color: var(--login-form-color);
+}
+
+.login-form div.line-separator > span {
+  background-color: var(--login-form-color);
+}
+
+.login-button > button {
+  width: 100%;
+  border-radius: 30rem;
+}
+
+form .form-field > .form-control {
+  font-size: 0.95em;
+}
+
+/* meme form styles */
+.meme-form {
+  border: 0.5px solid yellow;
+  border-radius: 8px;
+  background-color: var(--meme-form-color);
+  width: 500px;
+}
+
+.meme-form > .card-header {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.meme-form > .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-form .form-group {
+  width: 100%;
+}
+
+.meme-form > .card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-answers {
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 400px;
+}
+
+.meme-answers:active {
+  background-color: green;
+}
+
+/* Failure Modal styles */
+.failure-modal .modal-content {
+  background-color: #ff999c;
+  font-size: 1.2rem;
+  color: white;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.failure-modal .modal-header > .btn-close {
+  background-color: white;
+}
+
+.failure-modal .modal-footer > .btn {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+.failure-modal .modal-body {
+  text-align: center;
+}
+
+.failure-modal .modal-footer > .btn:hover {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+}
+
+/* Success Modal styles */
+
+.success-modal .modal-content {
+  background-color: green;
+  font-size: 1.2rem;
+  color: white;
+  width: 700px;
+  margin: auto;
+}
+
+.success-modal .modal-body {
+  text-align: center;
+}
+
+.success-modal .modal-footer > .btn {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+.success-modal .modal-footer > .btn:hover {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+}
+
+/* History Form Styles */
+.history-form {
+  width: 1000px;
+}
+
+.history-form .accordion-button {
+  background-color: rgb(190, 231, 245);
+
+  color: black;
+}
